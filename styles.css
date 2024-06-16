@@ -1,3 +1,4 @@
+/* General styles for the body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +7,7 @@ body {
     color: #333;
 }
 
+/* Header styles */
 header {
     background-color: #ff5722;
     color: #fff;
@@ -13,6 +15,7 @@ header {
     text-align: center;
 }
 
+/* Navigation styles */
 nav ul {
     list-style: none;
     padding: 0;
@@ -28,10 +31,12 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Main content padding */
 main {
     padding: 1em;
 }
 
+/* Footer styles */
 footer {
     background-color: #333;
     color: #fff;
@@ -42,6 +47,7 @@ footer {
     bottom: 0;
 }
 
+/* Form styles */
 form {
     display: flex;
     flex-direction: column;
@@ -64,9 +70,27 @@ form button {
     border: none;
     cursor: pointer;
 }
+
+/* Container for image and text using flexbox */
+.content {
+    display: flex;
+    align-items: center;
+    gap: 1em; /* Space between image and text */
+}
+
+/* Styles for smaller hotdog images */
 .hotdog-image {
-    max-width: 100%;
+    max-width: 150px; /* Set maximum width for smaller images */
     height: auto;
-    display: block;
-    margin: 1em 0;
+}
+
+/* Styles for large hotdog image on the Home page */
+.large-hotdog-image {
+    max-width: 100%; /* Set maximum width to keep the image large */
+    height: auto;
+}
+
+/* Text container to take the remaining space */
+.text {
+    flex: 1;
 }
